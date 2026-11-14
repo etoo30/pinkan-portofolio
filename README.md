@@ -1,6 +1,6 @@
 # Pinkan Amalia Marzanda — Professional Portfolio
 
-An English-language, single-page professional portfolio for a Bachelor of Pharmacy graduate from Universitas Diponegoro. It presents education, experience, research, competencies, recognition, and verified contact paths without claiming a pharmacist license.
+A bilingual, single-page professional portfolio for a Bachelor of Pharmacy graduate from Universitas Diponegoro. Visitors can switch between English and Indonesian; their choice is saved in the browser. It presents education, experience, research, competencies, recognition, and verified contact paths without claiming a pharmacist license.
 
 ## Technology
 

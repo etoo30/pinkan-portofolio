@@ -19,6 +19,7 @@ An editorial academic portfolio inspired by the quiet precision of a well-compos
 - Muted: `#777B82`
 - Display: Cormorant Garamond
 - Body and interface: Inter
+- Brand mark: PA initials in a fine rectangular outline; a personal monogram, not an institutional logo.
 - Content measure: 72rem maximum; body copy constrained to a comfortable reading measure.
 - Corners: restrained, mostly square editorial surfaces with soft rounding on media and controls.
 

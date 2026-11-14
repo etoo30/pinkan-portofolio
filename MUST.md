@@ -2,6 +2,8 @@
 
 Daftar ini memisahkan berkas yang dibutuhkan untuk melengkapi situs dari hal yang hanya perlu dikonfirmasi. Situs tetap dapat berjalan tanpa foto profil atau foto proyek.
 
+Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan. Tidak perlu menyiapkan file logo untuk perubahan ini. Jika nanti ingin memakai logo final buatan sendiri, siapkan SVG yang disetujui di `assets/icons/brand.svg`.
+
 ## Perlu disiapkan sebelum publikasi
 
 ### 1. Foto profil asli

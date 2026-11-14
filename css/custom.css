@@ -28,6 +28,8 @@ button { font: inherit; }
 .brand-mark { display: grid; width: 2.2rem; height: 2.2rem; place-items: center; border: 1px solid var(--ink); border-radius: 2px; font-family: var(--serif); font-size: .92rem; font-weight: 600; letter-spacing: -.08em; line-height: 1; }
 .brand-name { font-size: .76rem; font-weight: 600; letter-spacing: -.02em; }
 .primary-nav { display: flex; align-items: center; gap: clamp(1rem,2vw,2rem); }
+.language-toggle { display: inline-grid; min-width: 2.65rem; min-height: 2.35rem; place-items: center; align-self: center; margin-left: .15rem; border: 1px solid #b9b7af; background: transparent; color: var(--ink); font-size: .75rem; font-weight: 600; letter-spacing: .06em; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.language-toggle:hover, .language-toggle:focus-visible { border-color: var(--ink); background: var(--ink); color: #fff; }
 .primary-nav a { position: relative; display: inline-flex; min-height: 2.75rem; align-items: center; gap: .3rem; padding: .6rem 0; text-decoration: none; color: #595d64; font-size: 0.75rem; transition: color .2s ease; }
 .primary-nav a::after { position: absolute; right: 0; bottom: .35rem; left: 0; height: 1px; background: var(--ink); content: ""; transform: scaleX(0); transform-origin: right; transition: transform .25s var(--ease); }
 .primary-nav a:hover, .primary-nav a[aria-current="location"] { color: var(--ink); }
@@ -225,6 +227,7 @@ button { font: inherit; }
   .primary-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: flex; max-height: 0; flex-direction: column; align-items: stretch; gap: 0; overflow: hidden; padding: 0 1.25rem; border-bottom: 1px solid transparent; background: var(--ivory); transition: max-height .35s var(--ease), padding .35s var(--ease), border-color .2s ease; }
   .primary-nav.is-open { max-height: 25rem; padding-top: .6rem; padding-bottom: 1rem; border-color: var(--line); }
   .primary-nav a { min-height: 2.9rem; border-bottom: 1px solid rgba(23,38,61,.1); font-size: .8rem; }
+  .language-toggle { align-self: flex-start; margin-top: .75rem; }
   .primary-nav a::after { display: none; }
   .hero-shell { grid-template-columns: minmax(0,1.08fr) minmax(14rem,.82fr); min-height: auto; gap: 2rem; padding-top: 4.4rem; padding-bottom: 3.2rem; }
   .hero-copy h1 { font-size: clamp(4rem,10vw,6.4rem); }
