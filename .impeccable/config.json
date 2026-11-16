@@ -11,6 +11,12 @@
         ],
         "createdAt": "2026-11-13T19:36:38.101Z",
         "reason": "Agent: detector findings are false positives on this page; sections use padded inner wrappers, portrait and research visual are intentionally edge-to-edge media, and the award stamp centers its text well inside the circle"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-16T15:15:53.592Z",
+        "reason": "Project DESIGN.md explicitly specifies Inter for body and interface text; preserve the established visual system."
       }
     ]
   }

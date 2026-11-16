@@ -39,8 +39,8 @@ Then visit <http://localhost:8000>. The PDF download, fonts, Tailwind CDN, and L
 
 ## Update assets and content
 
-- **Profile photo:** place the owner's real photo at `assets/images/profile.jpg`. The page shows a labeled placeholder until that file exists. Do not use another person's or a generated photograph as Pinkan.
-- **Project images:** place real, owner-approved project images in `assets/images/projects/`, then add them in `index.html` with descriptive alt text and an appropriate caption.
+- **Profile photo:** the owner's photograph at `assets/images/profile.jpg` is displayed in the hero. Do not replace it with a stock or generated photograph.
+- **Project images:** the two photographs in `assets/images/projects/` are displayed beside the related competition and internship entries in `index.html`, with descriptive alt text.
 - **CV:** the supplied CV is copied to `assets/documents/cv-pinkan.pdf` and linked from Contact. Replace that file with the approved current PDF while keeping the same filename, or update the link in `index.html`.
 - **Social links and contact:** edit the verified URLs in the Contact section of `index.html`. The WhatsApp URL uses the international number form.
 - **Content:** update the semantic sections in `index.html`; keep dates, titles, claims, and qualifications aligned with the owner's verified records.

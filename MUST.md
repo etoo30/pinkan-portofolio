@@ -1,6 +1,6 @@
 # Berkas dan konfirmasi yang perlu disiapkan
 
-Daftar ini memisahkan berkas yang dibutuhkan untuk melengkapi situs dari hal yang hanya perlu dikonfirmasi. Situs tetap dapat berjalan tanpa foto profil atau foto proyek.
+Daftar ini memisahkan berkas yang dibutuhkan untuk melengkapi situs dari hal yang hanya perlu dikonfirmasi. Foto profil dan foto proyek sudah tersedia dan ditampilkan di situs.
 
 Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan. Tidak perlu menyiapkan file logo untuk perubahan ini. Jika nanti ingin memakai logo final buatan sendiri, siapkan SVG yang disetujui di `assets/icons/brand.svg`.
 
@@ -11,7 +11,7 @@ Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan.
 - **Nama file:** `profile.jpg`
 - **Letak:** `assets/images/profile.jpg`
 - **Isi:** foto Pinkan sendiri yang sudah disetujui untuk ditampilkan secara publik.
-- **Catatan:** berkas ini belum tersedia. Jangan gunakan foto stok atau gambar buatan sebagai foto Pinkan. Jika berkas belum ditambahkan, situs menampilkan placeholder.
+- **Status:** tersedia dan ditampilkan pada bagian hero. Jangan menggantinya dengan foto stok atau gambar buatan.
 
 ### 2. CV PDF yang sudah disetujui
 
@@ -25,9 +25,8 @@ Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan.
 ### Foto proyek
 
 - **Letak folder:** `assets/images/projects/`
-- **Nama file yang disarankan:** `thesis-research.jpg`, `bronze-medal-project.jpg`, atau `cosmetic-rnd.jpg`.
-- **Isi:** dokumentasi asli yang relevan dan aman untuk dipublikasikan, misalnya dokumentasi kegiatan atau karya yang memang Anda miliki.
-- **Catatan:** foto proyek belum tersedia dan tidak wajib. Jangan menambahkan foto yang menyiratkan hasil klinis, publikasi, atau validasi produk yang belum ada.
+- **Berkas tersedia:** `lomba-essay-bisnis-plan-tingkat-nasional.jpg` dan `magang-pt-dua-naga-kosmetindo.jpg`.
+- **Status:** foto lomba tampil pada pencapaian kompetisi dan foto magang tampil pada entri R&D kosmetik. Jangan menambahkan foto yang menyiratkan hasil klinis, publikasi, atau validasi produk yang belum ada.
 
 ### Favicon khusus
 

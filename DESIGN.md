@@ -29,4 +29,4 @@ Sticky navigation, mobile menu, smooth anchor navigation, restrained in-view rev
 
 ## Media
 
-No owner portrait or project images were provided. The portrait slot uses a labeled local-image placeholder. The supplied CV PDF is available as a direct download.
+Owner portrait and two project photographs are available locally. The portrait appears in the hero; competition and internship photographs appear with their related project entries. The supplied CV PDF is available as a direct download.

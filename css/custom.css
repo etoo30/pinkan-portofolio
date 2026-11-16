@@ -71,7 +71,7 @@ button { font: inherit; }
 .portrait-frame::before, .portrait-frame::after { position: absolute; z-index: 1; content: ""; pointer-events: none; }
 .portrait-frame::before { inset: 1rem; border: 1px solid rgba(23,38,61,.25); }
 .portrait-frame::after { top: 50%; left: 50%; width: 12rem; height: 12rem; border: 1px solid rgba(23,38,61,.12); border-radius: 50%; transform: translate(-50%,-50%); }
-.profile-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.profile-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
 .portrait-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; color: #72766f; }
 .portrait-placeholder[hidden] { display: none; }
 .portrait-art { width: 75%; max-height: 72%; color: #687365; }
@@ -150,7 +150,9 @@ button { font: inherit; }
 .research-feature-copy ul { display: grid; gap: .48rem; margin: 1.1rem 0 0; padding-left: 1.1rem; color: #555a61; font-size: 0.75rem; line-height: 1.75; }
 .research-feature-copy li::marker { color: #758170; }
 .research-caveat { margin: 1.3rem 0 0; padding-top: .85rem; border-top: 1px solid var(--line); color: #63676d; font-size: 0.75rem; line-height: 1.7; }
-.award-project { display: grid; grid-template-columns: 6.4rem minmax(0,1fr) 9rem; gap: 2rem; align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
+.project-photo { display: block; width: 100%; height: 100%; object-fit: cover; }
+.award-project { display: grid; grid-template-columns: 6.4rem minmax(0,1fr) minmax(10rem,15rem); gap: 2rem; align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
+.award-photo { aspect-ratio: .78; max-height: 19rem; object-position: center 38%; }
 .award-stamp { display: flex; width: 5.8rem; height: 5.8rem; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; border: 1px solid #8c9183; border-radius: 50%; color: #586353; transform: rotate(-8deg); }
 .award-stamp span { font-size: 0.75rem; letter-spacing: .12em; }
 .award-stamp strong { font-family: var(--serif); font-size: 2.2rem; font-weight: 500; line-height: .9; }
@@ -161,6 +163,8 @@ button { font: inherit; }
 .award-side-note span { display: inline-block; margin-top: .55rem; color: #596151; font-family: var(--sans); font-size: 0.75rem; }
 .project-rail { border-bottom: 1px solid var(--line); }
 .project-rail-item { display: grid; grid-template-columns: 2.5rem minmax(0,1fr) 1.4rem; gap: 1rem; align-items: start; padding: 1.55rem 0; border-top: 1px solid var(--line); }
+.project-rail-photo { grid-template-columns: 8rem 2.5rem minmax(0,1fr) 1.4rem; gap: 1.5rem; align-items: center; }
+.internship-photo { aspect-ratio: 1.2; }
 .rail-number { padding-top: .1rem; color: #60645d; font-family: var(--serif); font-size: 1.2rem; }
 .project-rail-item .project-category { margin-bottom: .35rem; font-size: 0.75rem; }
 .project-rail-item h3 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 1.75rem; font-weight: 500; letter-spacing: -.015em; }
@@ -290,12 +294,16 @@ button { font: inherit; }
   .research-visual { min-height: 17rem; margin-bottom: 1.7rem; }
   .research-feature-copy h3 { font-size: 2.45rem; }
   .award-project { grid-template-columns: 4.5rem minmax(0,1fr); gap: 1rem; align-items: start; padding: 2rem 0; }
+  .award-photo { grid-column: 2; width: min(100%, 20rem); max-height: 18rem; aspect-ratio: 1.15; margin-top: .5rem; object-position: center 42%; }
   .award-stamp { width: 4rem; height: 4rem; }
   .award-stamp span { font-size: 0.75rem; }
   .award-stamp strong { font-size: 1.55rem; }
   .award-copy h3 { font-size: 2rem; }
   .award-side-note { display: none; }
   .project-rail-item { grid-template-columns: 1.5rem minmax(0,1fr) 1rem; gap: .7rem; }
+  .project-rail-photo { grid-template-columns: 5.5rem 1.5rem minmax(0,1fr); gap: .75rem; }
+  .project-rail-photo .internship-photo { grid-column: 1 / -1; width: 100%; aspect-ratio: 1.65; }
+  .project-rail-photo > svg { display: none; }
   .project-rail-item h3 { font-size: 1.55rem; }
   .recognition-intro { display: block; }
   .recognition-intro h2 { font-size: clamp(3rem,12vw,4rem); }
