@@ -15,10 +15,9 @@ Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan.
 
 ### 2. CV PDF yang sudah disetujui
 
-- **Nama file:** `cv-pinkan.pdf`
-- **Letak:** `assets/documents/cv-pinkan.pdf`
-- **Status:** salinan CV yang diberikan sudah berada di lokasi tersebut dan tombol unduh situs mengarah ke file ini.
-- **Yang perlu dilakukan:** pastikan ini versi terbaru dan Anda menyetujui isinya untuk diunduh publik. Jika perlu mengganti, gunakan nama file yang sama atau perbarui tautan unduh di `index.html`.
+- **Nama file:** `Pinkan_Amalia_Marzanda_CV.pdf`
+- **Letak:** `assets/documents/Pinkan_Amalia_Marzanda_CV.pdf`
+- **Status:** PDF publik yang diberikan ditampilkan melalui tombol lihat dan unduh di bagian Contact.
 
 ## Opsional
 

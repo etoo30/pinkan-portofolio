@@ -128,6 +128,7 @@ button { font: inherit; }
 .experience-photo-landscape { aspect-ratio: 6 / 5; object-position: center; }
 .experience-photo-landscape-wide { aspect-ratio: 4 / 3; object-position: center; }
 .experience-photo-portrait { aspect-ratio: 3 / 5; object-position: center; }
+.experience-photo-group { aspect-ratio: 720 / 641; object-position: center; }
 .experience-content li::marker { color: #a8b49f; }
 
 .research-feature { display: grid; grid-template-columns: minmax(17rem,.82fr) minmax(0,1.18fr); gap: clamp(2.5rem,6vw,6rem); padding-bottom: 3.7rem; border-bottom: 1px solid var(--line); }
@@ -150,8 +151,10 @@ button { font: inherit; }
 .research-caveat a, .recognition-list a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .research-caveat a:hover, .recognition-list a:hover { text-decoration-thickness: 2px; }
 .project-photo { display: block; width: 100%; height: 100%; object-fit: cover; }
-.award-project { display: grid; grid-template-columns: minmax(0,1fr) minmax(10rem,15rem); gap: 2rem; align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
-.award-photo { aspect-ratio: .78; max-height: 19rem; object-position: center 38%; }
+.award-project { display: grid; grid-template-columns: minmax(0,1fr) minmax(18rem,28rem); gap: clamp(2rem,5vw,4rem); align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
+.award-visual { position: relative; width: 100%; padding-bottom: 2rem; }
+.award-certificate { display: block; width: 100%; aspect-ratio: 1600 / 1131; border: 1px solid rgba(23,38,61,.14); background: #fff; object-fit: contain; }
+.award-photo { position: absolute; right: -.5rem; bottom: 0; width: min(35%,9rem); aspect-ratio: .78; border: 4px solid var(--ivory); box-shadow: 0 8px 24px rgba(23,38,61,.16); object-fit: cover; object-position: center 38%; }
 .award-copy h3 { max-width: 48rem; font-size: clamp(2rem,3.2vw,2.8rem); }
 .award-copy > p:not(.project-category):not(.research-caveat) { max-width: 49rem; margin: .9rem 0 0; color: #555a61; font-size: 0.75rem; line-height: 1.85; }
 .award-copy .research-caveat { max-width: 49rem; }
@@ -284,7 +287,7 @@ button { font: inherit; }
   .research-visual { min-height: 17rem; margin-bottom: 1.7rem; }
   .research-feature-copy h3 { font-size: 2.45rem; }
   .award-project { grid-template-columns: minmax(0,1fr); gap: 1rem; align-items: start; padding: 2rem 0; }
-  .award-photo { grid-column: 1; width: min(100%, 20rem); max-height: 18rem; aspect-ratio: 1.15; margin-top: .5rem; object-position: center 42%; }
+  .award-visual { width: min(100%, 28rem); margin: .5rem auto 0; }
   .award-copy h3 { font-size: 2rem; }
   .award-side-note { display: none; }
   .project-rail-item { grid-template-columns: 1.5rem minmax(0,1fr) 1rem; gap: .7rem; }

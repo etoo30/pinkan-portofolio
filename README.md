@@ -20,7 +20,7 @@ index.html
 css/custom.css
 js/main.js
 assets/
-  documents/cv-pinkan.pdf
+  documents/Pinkan_Amalia_Marzanda_CV.pdf
   images/                 # Add the owner's real profile photo here
 PRODUCT.md
 DESIGN.md
@@ -42,7 +42,7 @@ Then visit <http://localhost:8000>. The PDF download, fonts, Tailwind CDN, and L
 - **Profile photo:** the owner's photograph at `assets/images/profile.jpg` is displayed in the hero. Do not replace it with a stock or generated photograph.
 - **Project images:** the two photographs in `assets/images/projects/` are displayed beside the related competition and internship entries in `index.html`, with descriptive alt text.
 - **Research source:** the thesis summary links to its public record in the Universitas Diponegoro repository. The recognition section links to UNDIP's profile of Pinkan.
-- **CV:** the supplied CV is copied to `assets/documents/cv-pinkan.pdf` and linked from Contact. Replace that file with the approved current PDF while keeping the same filename, or update the link in `index.html`.
+- **CV:** the public CV PDF is stored at `assets/documents/Pinkan_Amalia_Marzanda_CV.pdf` and linked from Contact for viewing and download.
 - **Social links and contact:** edit the verified URLs in the Contact section of `index.html`. The WhatsApp URL uses the international number form.
 - **Content:** update the semantic sections in `index.html`; keep dates, titles, claims, and qualifications aligned with the owner's verified records.
 
