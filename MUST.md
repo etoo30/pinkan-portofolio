@@ -36,7 +36,7 @@ Monogram navbar sudah diubah dari `P` menjadi `PA`, memakai inisial nama Pinkan.
 ## Konfirmasi informasi sebelum tayang
 
 - Pastikan pengalaman **Laboratory Teaching Assistant** memang berlangsung sampai Desember 2026. Situs menandainya sebagai ongoing karena tanggal akhir yang diberikan masih di masa depan pada saat penyusunan.
-- Pastikan apakah ada predikat kelulusan resmi, termasuk Cum Laude. Predikat tersebut belum ditampilkan karena belum terverifikasi.
+- Predikat Cum Laude kini dicantumkan berdasarkan profil resmi Universitas Diponegoro; pastikan rincian akademik lain tetap sesuai dengan dokumen pemilik.
 - Periksa kembali tanggal kelulusan dan seluruh tautan LinkedIn, Instagram, TikTok, email, serta WhatsApp.
 - Tinjau ringkasan skripsi. Tidak ada ukuran sampel, nilai statistik, hasil, atau kesimpulan yang ditambahkan.
 

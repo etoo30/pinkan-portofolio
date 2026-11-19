@@ -41,6 +41,7 @@ Then visit <http://localhost:8000>. The PDF download, fonts, Tailwind CDN, and L
 
 - **Profile photo:** the owner's photograph at `assets/images/profile.jpg` is displayed in the hero. Do not replace it with a stock or generated photograph.
 - **Project images:** the two photographs in `assets/images/projects/` are displayed beside the related competition and internship entries in `index.html`, with descriptive alt text.
+- **Research source:** the thesis summary links to its public record in the Universitas Diponegoro repository. The recognition section links to UNDIP's profile of Pinkan.
 - **CV:** the supplied CV is copied to `assets/documents/cv-pinkan.pdf` and linked from Contact. Replace that file with the approved current PDF while keeping the same filename, or update the link in `index.html`.
 - **Social links and contact:** edit the verified URLs in the Contact section of `index.html`. The WhatsApp URL uses the international number form.
 - **Content:** update the semantic sections in `index.html`; keep dates, titles, claims, and qualifications aligned with the owner's verified records.
@@ -60,8 +61,8 @@ For professional email, choose a hosted mailbox after deciding on the domain and
 ## Owner review before publication
 
 - Confirm that the Laboratory Teaching Assistant role really continues through December 2026; it is currently shown as ongoing because the supplied end date is in the future relative to November 2026.
-- Confirm whether any honors classification such as Cum Laude is formally recorded. It is intentionally omitted.
+- Cum Laude is included based on UNDIP's published profile; verify other academic details against the owner's records.
 - Confirm that the included PDF is the latest CV and approve it for public download.
 - Verify the supplied degree date and all social/contact URLs before launch.
-- No profile photograph or project media was provided. Add only real, approved assets.
-- The thesis appears as a project summary; no thesis document or publication link was supplied, and no statistical results are claimed.
+- The profile photograph and two project images are included from the supplied local assets.
+- The thesis summary links to the UNDIP repository abstract and reflects the abstract's reported method and results.

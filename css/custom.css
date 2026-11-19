@@ -67,15 +67,6 @@ button { font: inherit; }
 .hero-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem; margin-top: 2.7rem; color: #686c73; font-size: 0.75rem; }
 .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: #91938d; }
 .hero-visual { position: relative; justify-self: end; width: min(100%, 420px); padding: 0 1.8rem 1.6rem 0; }
-.portrait-frame { position: relative; aspect-ratio: .81; overflow: hidden; background: #e6e2d9; }
-.portrait-frame::before, .portrait-frame::after { position: absolute; z-index: 1; content: ""; pointer-events: none; }
-.portrait-frame::before { inset: 1rem; border: 1px solid rgba(23,38,61,.25); }
-.portrait-frame::after { top: 50%; left: 50%; width: 12rem; height: 12rem; border: 1px solid rgba(23,38,61,.12); border-radius: 50%; transform: translate(-50%,-50%); }
-.profile-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
-.portrait-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; color: #72766f; }
-.portrait-placeholder[hidden] { display: none; }
-.portrait-art { width: 75%; max-height: 72%; color: #687365; }
-.portrait-placeholder span { z-index: 2; color: #555b55; font-size: 0.75rem; line-height: 1.7; text-align: center; letter-spacing: .04em; }
 .hero-seal { position: absolute; right: -.4rem; bottom: 4.3rem; display: flex; width: 5.6rem; height: 5.6rem; flex-direction: column; align-items: center; justify-content: center; gap: .22rem; border: 1px solid rgba(23,38,61,.45); border-radius: 50%; background: var(--ivory); color: var(--ink); font-size: 0.75rem; letter-spacing: .12em; transform: rotate(-10deg); }
 .seal-center { font-family: var(--serif); font-size: 2rem; line-height: .9; letter-spacing: 0; }
 .hero-bottom { display: flex; align-items: center; gap: .6rem; padding-bottom: 1.1rem; color: #62665f; font-size: 0.75rem; letter-spacing: .035em; }
@@ -141,8 +132,13 @@ button { font: inherit; }
 .research-feature { display: grid; grid-template-columns: minmax(17rem,.82fr) minmax(0,1.18fr); gap: clamp(2.5rem,6vw,6rem); padding-bottom: 3.7rem; border-bottom: 1px solid var(--line); }
 .research-visual { position: relative; display: flex; min-height: 22rem; align-items: center; justify-content: center; overflow: hidden; background: #e8e5dd; color: #627061; }
 .research-visual::before { position: absolute; inset: 1rem; border: 1px solid rgba(23,38,61,.18); content: ""; }
-.research-visual-thesis svg { width: 91%; height: auto; }
 .visual-small { position: absolute; top: 1.6rem; left: 1.7rem; color: #53594f; font-size: 0.75rem; letter-spacing: .16em; }
+.thesis-source-card { position: relative; display: flex; width: calc(100% - 4rem); min-height: 16rem; flex-direction: column; justify-content: center; gap: .75rem; padding: 2rem; border: 1px solid rgba(23,38,61,.2); color: var(--ink); text-decoration: none; transition: transform .2s ease, background .2s ease; }
+.thesis-source-card:hover { background: rgba(255,255,255,.35); transform: translateY(-2px); }
+.thesis-card-type { color: #596151; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.thesis-source-card strong { font-family: var(--serif); font-size: clamp(2.5rem,4vw,3.5rem); font-weight: 500; line-height: .92; }
+.thesis-card-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: .8rem; color: #3f4c3b; font-size: .75rem; }
+.thesis-card-link svg { width: .9rem; height: .9rem; }
 .project-category { margin: 0 0 .8rem; color: #697264; font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; line-height: 1.6; }
 .research-feature-copy h3, .award-copy h3 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(2.2rem,3.8vw,3.4rem); font-weight: 500; letter-spacing: -.035em; line-height: .98; }
 .project-location { margin: .9rem 0 1.2rem; color: #63676d; font-size: 0.75rem; }
@@ -150,12 +146,11 @@ button { font: inherit; }
 .research-feature-copy ul { display: grid; gap: .48rem; margin: 1.1rem 0 0; padding-left: 1.1rem; color: #555a61; font-size: 0.75rem; line-height: 1.75; }
 .research-feature-copy li::marker { color: #758170; }
 .research-caveat { margin: 1.3rem 0 0; padding-top: .85rem; border-top: 1px solid var(--line); color: #63676d; font-size: 0.75rem; line-height: 1.7; }
+.research-caveat a, .recognition-list a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.research-caveat a:hover, .recognition-list a:hover { text-decoration-thickness: 2px; }
 .project-photo { display: block; width: 100%; height: 100%; object-fit: cover; }
-.award-project { display: grid; grid-template-columns: 6.4rem minmax(0,1fr) minmax(10rem,15rem); gap: 2rem; align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
+.award-project { display: grid; grid-template-columns: minmax(0,1fr) minmax(10rem,15rem); gap: 2rem; align-items: center; padding: 2.7rem 0; border-bottom: 1px solid var(--line); }
 .award-photo { aspect-ratio: .78; max-height: 19rem; object-position: center 38%; }
-.award-stamp { display: flex; width: 5.8rem; height: 5.8rem; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; border: 1px solid #8c9183; border-radius: 50%; color: #586353; transform: rotate(-8deg); }
-.award-stamp span { font-size: 0.75rem; letter-spacing: .12em; }
-.award-stamp strong { font-family: var(--serif); font-size: 2.2rem; font-weight: 500; line-height: .9; }
 .award-copy h3 { max-width: 48rem; font-size: clamp(2rem,3.2vw,2.8rem); }
 .award-copy > p:not(.project-category):not(.research-caveat) { max-width: 49rem; margin: .9rem 0 0; color: #555a61; font-size: 0.75rem; line-height: 1.85; }
 .award-copy .research-caveat { max-width: 49rem; }
@@ -163,8 +158,9 @@ button { font: inherit; }
 .award-side-note span { display: inline-block; margin-top: .55rem; color: #596151; font-family: var(--sans); font-size: 0.75rem; }
 .project-rail { border-bottom: 1px solid var(--line); }
 .project-rail-item { display: grid; grid-template-columns: 2.5rem minmax(0,1fr) 1.4rem; gap: 1rem; align-items: start; padding: 1.55rem 0; border-top: 1px solid var(--line); }
-.project-rail-photo { grid-template-columns: 8rem 2.5rem minmax(0,1fr) 1.4rem; gap: 1.5rem; align-items: center; }
-.internship-photo { aspect-ratio: 1.2; }
+.project-rail-photo { grid-template-columns: minmax(10rem,15rem) minmax(0,1fr) 1.4rem; gap: 1.5rem; align-items: center; }
+.project-rail-main { display: grid; grid-template-columns: 2.5rem minmax(0,1fr); gap: 1rem; align-items: start; }
+.internship-photo { max-height: 19rem; aspect-ratio: .78; object-position: 62% center; }
 .rail-number { padding-top: .1rem; color: #60645d; font-family: var(--serif); font-size: 1.2rem; }
 .project-rail-item .project-category { margin-bottom: .35rem; font-size: 0.75rem; }
 .project-rail-item h3 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 1.75rem; font-weight: 500; letter-spacing: -.015em; }
@@ -259,8 +255,6 @@ button { font: inherit; }
   .text-link { font-size: 0.75rem; }
   .hero-meta { margin-top: 1.8rem; font-size: 0.75rem; }
   .hero-visual { align-self: center; width: min(85%, 330px); margin: 0 auto; padding-right: 1rem; padding-bottom: 1.4rem; }
-  .portrait-frame { aspect-ratio: .9; }
-  .portrait-frame::after { width: 9rem; height: 9rem; }
   .hero-seal { bottom: 3.7rem; width: 4.3rem; height: 4.3rem; font-size: 0.75rem; }
   .seal-center { font-size: 1.6rem; }
   .hero-bottom { gap: .4rem; padding-bottom: .75rem; font-size: 0.75rem; }
@@ -293,17 +287,15 @@ button { font: inherit; }
   .research-feature { display: block; padding-bottom: 2.5rem; }
   .research-visual { min-height: 17rem; margin-bottom: 1.7rem; }
   .research-feature-copy h3 { font-size: 2.45rem; }
-  .award-project { grid-template-columns: 4.5rem minmax(0,1fr); gap: 1rem; align-items: start; padding: 2rem 0; }
-  .award-photo { grid-column: 2; width: min(100%, 20rem); max-height: 18rem; aspect-ratio: 1.15; margin-top: .5rem; object-position: center 42%; }
-  .award-stamp { width: 4rem; height: 4rem; }
-  .award-stamp span { font-size: 0.75rem; }
-  .award-stamp strong { font-size: 1.55rem; }
+  .award-project { grid-template-columns: minmax(0,1fr); gap: 1rem; align-items: start; padding: 2rem 0; }
+  .award-photo { grid-column: 1; width: min(100%, 20rem); max-height: 18rem; aspect-ratio: 1.15; margin-top: .5rem; object-position: center 42%; }
   .award-copy h3 { font-size: 2rem; }
   .award-side-note { display: none; }
   .project-rail-item { grid-template-columns: 1.5rem minmax(0,1fr) 1rem; gap: .7rem; }
-  .project-rail-photo { grid-template-columns: 5.5rem 1.5rem minmax(0,1fr); gap: .75rem; }
-  .project-rail-photo .internship-photo { grid-column: 1 / -1; width: 100%; aspect-ratio: 1.65; }
-  .project-rail-photo > svg { display: none; }
+  .project-rail-photo { grid-template-columns: minmax(0,1fr) 1rem; gap: .85rem .7rem; align-items: start; }
+  .project-rail-photo .internship-photo { grid-column: 1 / -1; width: min(100%, 20rem); max-height: 18rem; aspect-ratio: 1.15; margin-top: 0; object-position: 58% center; }
+  .project-rail-main { grid-template-columns: 1.5rem minmax(0,1fr); gap: .7rem; }
+  .project-rail-photo > svg { grid-column: 2; grid-row: 2; }
   .project-rail-item h3 { font-size: 1.55rem; }
   .recognition-intro { display: block; }
   .recognition-intro h2 { font-size: clamp(3rem,12vw,4rem); }
