@@ -134,14 +134,12 @@ button { font: inherit; }
 
 .research-feature { display: grid; grid-template-columns: minmax(17rem,.82fr) minmax(0,1.18fr); gap: clamp(2.5rem,6vw,6rem); padding-bottom: 3.7rem; border-bottom: 1px solid var(--line); }
 .research-visual { position: relative; display: flex; min-height: 22rem; align-items: center; justify-content: center; overflow: hidden; background: #e8e5dd; color: #627061; }
+.research-visual-thesis { background-color: #fff; background-image: url("../assets/background/FK_UNDIP.svg.webp"); background-position: center 42%; background-repeat: no-repeat; background-size: 94% auto; }
 .research-visual::before { position: absolute; inset: 1rem; border: 1px solid rgba(23,38,61,.18); content: ""; }
-.visual-small { position: absolute; top: 1.6rem; left: 1.7rem; color: #53594f; font-size: 0.75rem; letter-spacing: .16em; }
-.thesis-source-card { position: relative; display: flex; width: calc(100% - 4rem); min-height: 16rem; flex-direction: column; justify-content: center; gap: .75rem; padding: 2rem; border: 1px solid rgba(23,38,61,.2); color: var(--ink); text-decoration: none; transition: transform .2s ease, background .2s ease; }
-.thesis-source-card:hover { background: rgba(255,255,255,.35); transform: translateY(-2px); }
-.thesis-card-type { color: #596151; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
-.thesis-source-card strong { font-family: var(--serif); font-size: clamp(2.5rem,4vw,3.5rem); font-weight: 500; line-height: .92; }
-.thesis-card-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: .8rem; color: #3f4c3b; font-size: .75rem; }
-.thesis-card-link svg { width: .9rem; height: .9rem; }
+.research-visual-thesis::before { display: none; }
+.thesis-source-link { position: absolute; right: 1rem; bottom: 1rem; display: inline-flex; min-height: 2.75rem; align-items: center; gap: .45rem; padding: .65rem .9rem; border: 1px solid rgba(23,38,61,.22); background: var(--ivory); color: var(--ink); font-size: .75rem; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.thesis-source-link:hover { background: #fff; transform: translateY(-2px); }
+.thesis-source-link svg { width: .9rem; height: .9rem; }
 .project-category { margin: 0 0 .8rem; color: #697264; font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; line-height: 1.6; }
 .research-feature-copy h3, .award-copy h3 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(2.2rem,3.8vw,3.4rem); font-weight: 500; letter-spacing: -.035em; line-height: .98; }
 .project-location { margin: .9rem 0 1.2rem; color: #63676d; font-size: 0.75rem; }
